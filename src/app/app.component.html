@@ -1,0 +1,23 @@
+<h1 class="text-center">Encrypted App</h1>
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h2 class="btn btn-primary btn-lg btn-block">
+        Encryption
+      </h2>
+      <div class="form-group">
+        <label for="txtTextToConvert">Plain Text</label><br>
+        <input type="text" class="form-control" placeholder="Enter text you want to encrypt" [(ngModel)]="plainText">
+      </div><br>
+      <div class="form-group">
+        <label for="txtPassword">Password</label><br>
+        <input type="password" class="form-control" placeholder="Enter encryption password" [(ngModel)]="encPassword">
+      </div><br>
+      <button type="button" class="btn btn-success float-right" (click)="convertText('encrypt')">Encrypt</button>
+      <br><br>
+      <textarea class="form-control" readonly rows="3">{{conversionEncryptOutput}}</textarea>
+      <br>
+    </div>
+    <br><br>
+  </div>
+</div>
